@@ -36,7 +36,7 @@ export class CoreDbProvider {
      * @returns Whether queries should be logged.
      */
     loggingEnabled(): boolean {
-        return CoreBrowser.hasDevelopmentSetting('DBLoggingEnabled') || CoreAppProvider.isAutomated();
+        return CoreBrowser.hasCookie('MoodleAppDBLoggingEnabled') || CoreAppProvider.isAutomated();
     }
 
     /**

@@ -157,6 +157,11 @@ ion-header {
         ion-spinner {
             margin: 10px;
         }
+		ion-back-button
+		{
+			 --background: transparent;
+		
+		}
 
         ion-back-button,
         .in-toolbar.button-clear,

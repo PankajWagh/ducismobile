@@ -312,6 +312,7 @@
     ion-back-button {
         --min-height: var(--a11y-min-target-size);
         --min-width: var(--a11y-min-target-size);
+		---background:#FF0000;
     }
 
     --selected-item-color: var(--primary);
@@ -409,3 +410,4 @@
         --core-mainpage-sitename-display: inline;
     }
 }
+
