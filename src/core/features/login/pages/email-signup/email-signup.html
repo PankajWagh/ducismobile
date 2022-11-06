@@ -74,8 +74,7 @@
                 </form>
 				<div class="core-login-site-logo">
 						<!-- Show site logo or a default image. -->
-						<img *ngIf="logoUrl" [src]="logoUrl" role="presentation" alt="" onError="this.src='assets/img/login_logo.png'">
-						<img *ngIf="!logoUrl" src="assets/img/login_logo.png" role="presentation" alt="">
+						<img src="assets/img/login_logo.png" role="presentation" alt="">
 				</div>	
                 <!-- Signup form. -->
                 <form *ngIf="!ageDigitalConsentVerification" [formGroup]="signupForm" (ngSubmit)="create($event)" #signupFormEl>
@@ -88,7 +87,7 @@
                             <p *ngIf="siteName" class="ion-padding item-heading">
                                 <core-format-text [text]="siteName" [filter]="false"></core-format-text>
                             </p>
-                            <p *ngIf="siteName">{{siteUrl}}</p>
+                        <!--    <p *ngIf="siteName">{{siteUrl}}</p> -->
                         </ion-label>
                     </ion-item>
                     <!-- Username and password. -->

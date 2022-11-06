@@ -107,7 +107,9 @@ export class CoreCoursesCourseListItemComponent implements OnInit, OnDestroy, On
                         label: 'core.courses.selfenrolment',
                         icon: 'fas-key',
                     });
-                } else if (instance === 'guest') {
+                } 
+				
+				else if (instance === 'guest') {
                     this.enrolmentIcons.push({
                         label: 'core.courses.allowguests',
                         icon: 'fas-unlock',

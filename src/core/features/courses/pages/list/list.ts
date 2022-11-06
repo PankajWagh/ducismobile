@@ -63,7 +63,7 @@ export class CoreCoursesListPage implements OnInit, OnDestroy {
     protected siteUpdatedObserver: CoreEventObserver;
     protected downloadEnabledObserver: CoreEventObserver;
     protected courseIds = '';
-    protected courseCategoriesIds: any = [];
+    public courseCategoriesIds: any = [];
     protected isDestroyed = false;
 
     constructor() {
@@ -120,6 +120,7 @@ export class CoreCoursesListPage implements OnInit, OnDestroy {
 		console.log(mode);
         if (mode == 'search') {
             this.searchMode = true;
+			
         }
 
         if (mode == 'my') {
@@ -161,7 +162,6 @@ export class CoreCoursesListPage implements OnInit, OnDestroy {
      */
     protected async loadCourses(clearTheList = false): Promise<void> {
         this.loadMoreError = false;
-
         try {
             if (clearTheList) {
                 if (this.showOnlyEnrolled) {
