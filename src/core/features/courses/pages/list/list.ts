@@ -117,6 +117,11 @@ export class CoreCoursesListPage implements OnInit, OnDestroy {
             (this.downloadCourseEnabled || this.downloadCoursesEnabled) && CoreCourses.getCourseDownloadOptionsEnabled();
 
         const mode = CoreNavigator.getRouteParam<CoreCoursesListMode>('mode') || 'my';
+		
+		//mode ='my';
+		
+		this.showOnlyEnrolled =true;
+		
 		console.log(mode);
         if (mode == 'search') {
             this.searchMode = true;
