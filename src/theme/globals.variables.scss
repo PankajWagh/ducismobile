@@ -21,8 +21,9 @@ $cyan:        #008196 !default; // Not used.
 $green:       #357a32 !default;
 $red:         #FF0000 !default;
 $yellow:      #f0ad4e !default;
-
-$brand-color: #ff7518 !default;
+$core-navigation-max-height:46dp;
+$height:46dp;
+$brand-color: #ec0e0e !default;
 
 $text-color:               $gray-900 !default;
 $text-color-rgb:           color-to-rgb-list($text-color) !default;

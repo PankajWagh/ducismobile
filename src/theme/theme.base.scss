@@ -1149,24 +1149,24 @@ ion-chip {
 }
 
 ion-searchbar {
-    height: var(--height) !important;
+    height: var(--height,48dp) !important;
 
     .searchbar-input-container {
         color: var(--color) !important;
-        height: var(--height) !important;
+        height: var(--height,48dp) !important;
     }
 
     .searchbar-input {
-        height: var(--height) !important;
+        height: var(--height,48dp) !important;
         border: 1px solid var(--border-color) !important;
         box-shadow: none !important;
         border-radius: var(--border-radius) !important;
         background: var(--background) !important;
-        @include padding-horizontal(var(--height) !important);
+        @include padding-horizontal(var(--height,48dp) !important);
     }
 
     .searchbar-search-icon {
-        @include position(null, null, null, calc(var(--height) / 4) !important);
+        @include position(null, null, null, calc(var(--height,48dp) / 4) !important);
     }
 
     button {

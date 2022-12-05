@@ -194,13 +194,13 @@ export class CoreCourseSummaryPage implements OnInit, OnDestroy {
             if (!method.status) {
                 return;
             }
-			console.log(method);
+			
 
             if (method.type === 'self') {
                 this.selfEnrolInstances.push(method);
             } else if (method.type === 'guest') {
                 this.guestInstanceId.resolve(method.id);
-            } else if (method.type === 'paypal' || method.type === 'license' ) {
+            } else {
                 // Other enrolments that comes from that WS should need user action.
                 this.otherEnrolments = true;
             }
